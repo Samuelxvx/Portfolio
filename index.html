@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99009ec997.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+    <!-- navigate bar -->
+    <section id="navigation">
+        <label>
+            <input type="checkbox">
+            <span class="menu interactable">
+              <span class="hamburger"></span>
+            </span>
+            <ul>
+                <li><a class="pseudo-text-effect text-link" href="#hero" data-after="Home"><span>Home</span></a></li>
+                <li><a class="pseudo-text-effect text-link" href="#" data-after="About"><span>About</span></a></li>
+                <li><a class="pseudo-text-effect text-link" href="#gallery-section" data-after="Works"><span>Works</span></a></li>
+                <li><a class="pseudo-text-effect text-link" href="#" data-after="Contract"><span>Contract</span></a></li>
+            </ul>
+          </label>
+    </section>
+    <!-- end navigate bar -->
+
+    <!-- hero section -->
+    <section id="hero">
+        <div class="container">
+            <div class="left">
+                <p class="subheading">I'm Sam</p>
+                <h2 class="heading">
+                    <div class="wrapper"><span>A Web</span></div>
+                    <div class="wrapper"><span>Developer</span></div>
+                </h2>
+                <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eos numquam </p>
+                <div class="navigate">
+                    <p class="text_navigate">Check out my works</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>
+                </div>
+            </div>
+            <div class="right">
+                <!-- <img src="./images/Programming airtext.svg" alt="programming airtext" class="airtext"> -->
+                <img src="./images/Programming.svg" alt="programming">
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+
+    <!-- Skill section -->
+    <section id="skill-bar">
+        <div class="container">
+            <div class="item"><img src="/logos/w3_html5-ar21.svg" alt="HTML"></div>
+            <div class="item"><img src="/logos/w3_css-ar21.svg" alt="CSS"></div>
+            <div class="item"><img src="/logos/javascript-ar21.svg" alt="JS"></div>
+            <div class="item"><img src="/logos/sass-lang-ar21.svg" alt="SASS"></div>
+            <div class="item"><img src="/logos/python-ar21.svg" alt="PYTHON"></div>
+            <div class="item"><img src="/logos/djangoproject-ar21.svg" alt="DJANGO"></div>
+            <div class="item"><img src="/logos/nodejs-ar21.svg" alt="NODE.JS"></div>
+            <div class="item"><img src="/logos/mysql-ar21.svg" alt="MySQL"></div>
+            <div class="item"><img src="/logos/wordpress-ar21.svg" alt="WORDPRESS"></div>
+            <div class="item"><img src="/logos/git-scm-ar21.svg" alt="GIT"></div>
+  
+        </div>
+        <div class="other">
+            <div class="other-item powerapp"><img src="/logos/microsoft-powerapps-logo-1_orig.png" alt="PowerApps"></div>
+            <div class="other-item pr"><img src="/logos/Adobe_Premiere_Pro_CC_icon.svg" alt="Pr"></div>
+            <div class="other-item github"><img src="/logos/github-ar21.svg" alt="Github"></div>
+            <div class="other-item vs"><img src="/logos/visualstudio_code-ar21.svg" alt="VS code"></div>
+        </div>
+
+    </section>
+    <!-- end Skill section -->
+
+
+    <div id="trailer">
+        <i id="trailer-icon" class="fa-solid fa-arrow-up-right"></i>
+    </div>
+    <section id="gallery-section">
+        <div class="gallery">
+            <div class="interactable" data-type="link"
+                style="background-image: url(https://images.unsplash.com/photo-1657739774592-14c8f97eaece?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60)">
+            </div>
+            <div class="interactable" data-type="video"
+                style="background-image: url(https://images.unsplash.com/photo-1657779582398-a13b5896ff19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60)">
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
