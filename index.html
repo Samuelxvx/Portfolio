@@ -20,10 +20,10 @@
               <span class="hamburger"></span>
             </span>
             <ul>
-                <li><a class="pseudo-text-effect text-link" href="#hero" data-after="Home"><span>Home</span></a></li>
-                <li><a class="pseudo-text-effect text-link" href="#" data-after="About"><span>About</span></a></li>
-                <li><a class="pseudo-text-effect text-link" href="#gallery-section" data-after="Works"><span>Works</span></a></li>
-                <li><a class="pseudo-text-effect text-link" href="#" data-after="Contract"><span>Contract</span></a></li>
+                <li><a class="pseudo-text-effect text-link interactable" href="#hero" data-after="Home"><span>Home</span></a></li>
+                <li><a class="pseudo-text-effect text-link interactable" href="#about" data-after="About"><span>About</span></a></li>
+                <li><a class="pseudo-text-effect text-link interactable" href="#work-heading" data-after="Works"><span>Works</span></a></li>
+                <li><a class="pseudo-text-effect text-link interactable" href="#" data-after="Contact"><span>Contact</span></a></li>
             </ul>
           </label>
     </section>
@@ -32,6 +32,9 @@
     <!-- hero section -->
     <section id="hero">
         <div class="container">
+            <a href="#about">
+                <div class="scroll-down"></div>
+            </a>
             <div class="left">
                 <p class="subheading">I'm Sam</p>
                 <h2 class="heading">
@@ -40,7 +43,7 @@
                 </h2>
                 <p class="desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut eos numquam </p>
                 <div class="navigate">
-                    <p class="text_navigate">Check out my works</p>
+                    <a href="#work-heading" class="text_navigate interactable">Check out my works</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                       </svg>
@@ -54,8 +57,50 @@
     </section>
     <!-- end hero section -->
 
+    <!-- about section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-heading" data-outline="about">About</h2>
+            <div class="wrapper">
+                <div class="left">
+                    <div class="card">
+                        <div class="img">
+                            <img src="/images/1.jpg" alt="profile pic">
+                        </div>
+                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum 
+                            facilis ratione magni distinctio voluptates quia nulla delectus
+                            quas aliquid eos quod,quos, veniam rem hic? Repellat quas libero culpa nulla!</p>
+                        <h3 class="card-name">Sam</h3>
+                        <p class="card-sub-title">Web Developer</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p class="subheading">Hi i am Sam</p>
+                    <h2 class="slogan">web Developer</h2>
+                    <p class="right-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum 
+                        facilis ratione magni distinctio voluptates quia nulla delectus
+                        quas aliquid eos quod,quos, veniam rem hic? Repellat quas libero culpa nulla!</p>
+                    <div class="buttons">
+                        <div class="interactable">
+                            <button class="wt-btn_sign ">
+                                <a href="/RESUME.TXT" download>
+                                    <span class="wt-btn_sign-bound" >     
+                                        <span data-width="#fff" data-text="Download ⭳">Download ⭳
+                                        </span></span>
+                                </a>
+
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about section -->
+    
     <!-- Skill section -->
     <section id="skill-bar">
+        <h2 class="section-heading " data-outline="skill">Skill</h2>
         <div class="container">
             <div class="item"><img src="/logos/w3_html5-ar21.svg" alt="HTML"></div>
             <div class="item"><img src="/logos/w3_css-ar21.svg" alt="CSS"></div>
@@ -69,6 +114,9 @@
             <div class="item"><img src="/logos/git-scm-ar21.svg" alt="GIT"></div>
   
         </div>
+        <div class="heading-skill">
+            <h2 class="section-heading" data-outline="other skill">other Skill</h2>
+        </div>
         <div class="other">
             <div class="other-item powerapp"><img src="/logos/microsoft-powerapps-logo-1_orig.png" alt="PowerApps"></div>
             <div class="other-item pr"><img src="/logos/Adobe_Premiere_Pro_CC_icon.svg" alt="Pr"></div>
@@ -79,21 +127,212 @@
     </section>
     <!-- end Skill section -->
 
-
     <div id="trailer">
         <i id="trailer-icon" class="fa-solid fa-arrow-up-right"></i>
     </div>
-    <section id="gallery-section">
-        <div class="gallery">
-            <div class="interactable" data-type="link"
-                style="background-image: url(https://images.unsplash.com/photo-1657739774592-14c8f97eaece?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60)">
+
+    <!-- button scroll up -->
+    <a href="#hero" class="scroll-top interactable"><i class="fa-solid fa-chevron-up fa-3x"></i></a>
+
+    <!-- Works section -->
+
+    
+    <section id="work-heading">
+        <h2 class="section-heading-works " data-outline="works">Works</h2>
+    </section>
+        <section id="works-right">
+            <div class="container">
+                
+                <div class="left">
+                    <a href="#"><img  class="interactable" src="/images/1.jpg" alt="image"></a>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h1>THIS HEADING</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero ipsa culpa! Quae 
+                            distinctio porro vero laborum neque? Consequatur quis, sequi assumenda delectus 
+                            eius fuga eos sapiente nostrum? Ea, blanditiis.</p>
+                        <ul class="tech-list">
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                        </ul>
+                        <div class='social-links'>
+                            <a href="#">
+                            <div class='social-btn flex-center ' id="link-site" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                                <span>Link project</span>
+                            </div>
+                            </a>
+                            <a href="#">
+                                <div class='social-btn flex-center' id="github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Samuelxvx</span>
+                        </div>
+                    </a>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="interactable" data-type="video"
-                style="background-image: url(https://images.unsplash.com/photo-1657779582398-a13b5896ff19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60)">
+        </section>
+        <section id="works-left">
+            <div class="container">
+
+                <div class="right">
+                    <div class="content">
+                        <h1>THIS HEADING</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero ipsa culpa! Quae 
+                            distinctio porro vero laborum neque? Consequatur quis, sequi assumenda delectus 
+                            eius fuga eos sapiente nostrum? Ea, blanditiis.</p>
+                        <ul class="tech-list">
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                        </ul>
+                        <div class='social-links'>
+                            <a href="#">
+                            <div class='social-btn flex-center' id="link-site">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                                <span>Link project</span>
+                            </div>
+                            </a>
+                            <a href="#">
+                                <div class='social-btn flex-center' id="github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Samuelxvx</span>
+                        </div>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+                                
+                <div class="left">
+                    <a href="#"><img class="interactable" src="/images/1.jpg" alt="image"></a>
+                </div>
             </div>
+        </section>
+        <section id="works-right">
+            <div class="container">
+                
+                <div class="left">
+                    <a href="#"><img  class="interactable" src="/images/1.jpg" alt="image"></a>
+                </div>
+                <div class="right">
+                    <div class="content">
+                        <h1>THIS HEADING</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero ipsa culpa! Quae 
+                            distinctio porro vero laborum neque? Consequatur quis, sequi assumenda delectus 
+                            eius fuga eos sapiente nostrum? Ea, blanditiis.</p>
+                        <ul class="tech-list">
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                            <li>&lt; asda &gt;</li>
+                        </ul>
+                        <div class='social-links'>
+                            <a href="#">
+                            <div class='social-btn flex-center ' id="link-site" >
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg>
+                                <span>Link project</span>
+                            </div>
+                            </a>
+                            <a href="#">
+                                <div class='social-btn flex-center' id="github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                                    <span>Samuelxvx</span>
+                        </div>
+                    </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+    <!-- contact section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-heading" data-outline="contact">CONTACT</h2>
+            <div class="wrapper">
+                <div class="left">
+                    <h2 class="contact-heading">Hire/Inqyiry</h2>
+                    <p class="contact-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventor</p>
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </span>
+                                    <span class="text">1231241135123</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <span class="text">mail@mail.com</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-location-pin"></i>
+                                    </span>
+                                    <span class="text">Thailoand</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-info">
+                        <ul>
+                            <li><a href="#">icon</a></li>
+                            <li><a href="#">icon</a></li>
+                            <li><a href="#">icon</a></li>
+                            <li><a href="#">icon</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+
+                    <div class="form-wrapper">
+                        <h3 class="contact-card-text">contact</h3>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="name">Your name</label>
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">your mail</label>
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="message" id="message" width="100%"></textarea>
+                            </div>
+                            <button type="submit" class="button-submit" >Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+    
+    <!-- footer section -->
 
+    
+    
 
 
     <script src="app.js"></script>

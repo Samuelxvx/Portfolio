@@ -39,6 +39,9 @@ window.onmousemove = e => {
     icon.className = getTrailerClass(interactable.dataset.type);
   }
 }
+
+
+
 function hideMenu() {
   let menuOpen = document.querySelector(".toggler").checked;
 
@@ -47,6 +50,7 @@ function hideMenu() {
   }
 }
 window.addEventListener("scroll", hideMenu);
+
 
 
 const links = document.querySelectorAll("a.text-link");
