@@ -8,6 +8,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/99009ec997.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
@@ -27,6 +28,17 @@
             </ul>
           </label>
     </section>
+
+    <!-- light/dark toggle -->
+    <div class="light-dark">
+        <input type="checkbox" class="toggle" id="toggle">
+        <label for="toggle" class="label">
+            <i class="fa-solid fa-sun fa-xl"></i>
+            <i class="fa-solid fa-moon fa-2xl"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
     <!-- end navigate bar -->
 
     <!-- hero section -->
@@ -65,12 +77,10 @@
                 <div class="left">
                     <div class="card hidden">
                         <div class="img">
-                            <img src="/images/1.jpg" alt="profile pic">
+                            <img src="/images/2.jpg" alt="profile pic">
                         </div>
-                        <p class="card-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum 
-                            facilis ratione magni distinctio voluptates quia nulla delectus
-                            quas aliquid eos quod,quos, veniam rem hic? Repellat quas libero culpa nulla!</p>
-                        <h3 class="card-name">Sam</h3>
+                        <p class="card-desc">Computers have always been my interest. So learning about computers is something that I love to learn and develop skills especially for website designing, whether front or back. when you know how it works It always makes me want to learn more about it.</p>
+                        <h3 class="card-name">Tanakrit Takatoku</h3>
                         <p class="card-sub-title">Web Developer</p>
                     </div>
                 </div>
@@ -265,7 +275,7 @@
                     <div class="contact-info">
                         <ul>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="" target="_blank" rel="noopener noreferrer">
                                     <span class="icon">
                                         <i class="fa-solid fa-phone"></i>
                                     </span>
@@ -281,7 +291,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.google.com/maps/place/Bangkok,+Thailand/@13.7245995,100.6331108,11z/data=!3m1!4b1!4m5!3m4!1s0x311d6032280d61f3:0x10100b25de24820!8m2!3d13.7563309!4d100.5017651" target="_blank" rel="noopener noreferrer">
                                     <span class="icon">
                                         <i class="fa-solid fa-location-pin"></i>
                                     </span>
@@ -298,33 +308,10 @@
                             <li><a href="https://codepen.io/samuel-t-takatoku" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-codepen fa-xl"></i></a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="right hidden">
-
-                    <div class="form-wrapper">
-                        <h3 class="contact-card-text">Contact</h3>
-                        <form action="#">
-                            <div class="form-group">
-                                <label for="name">Your name</label>
-                                <div class="input-wrapper">
-                                    <input type="text" id="name" name="name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your mail</label>
-                                <div class="input-wrapper">
-                                    <input type="email" id="email" name="email">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea type="text" name="message" id="message" width="100%"></textarea>
-                            </div>
-                            <button type="submit" class="button-submit interactable" ><span class="">Send</button>
-                        </form>
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
     </section>
