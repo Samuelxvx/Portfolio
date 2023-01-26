@@ -985,6 +985,9 @@ a {
   #works-left .container .right ul {
     font-size: 1.3em;
   }
+  #contact {
+    padding: 100px 50px;
+  }
 }
 @-webkit-keyframes scroll-down {
   0% {

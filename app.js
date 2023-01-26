@@ -90,35 +90,3 @@ toggle.addEventListener('change', () => {
   //change theme web
   document.body.classList.toggle('dark')
 })
-
-
-// mail js
-
-// const contactForm = document.getElementById('contact-form'),
-//       contactName = document.getElementById('name'),
-//       contactEmail = document.getElementById('email'),
-//       contactMessage = document.getElementById('message')
-//       contactMessage = document.getElementById('contact-message')
-
-// const sendEmail = (e) => {
-//   e.PreventDefault()
-
-//   if (contactName.value === '' || contactEmail.value ==='' || contactMessage.value ==='') {
-//       contactMessage.classList.remove('color-blue')
-//       contactMessage.classList.add('color-red')
-
-//       contactMessage.textContent = 'Write all the input file '
-
-//   }else {
-//     emailjs.sendForm('service_a1ji6zi','template_vy0q6zd','contact-form','XNZVZ-O94y44awfqe')
-//       .then(() => {
-//         contactMessagePop.classList.add('color-blue')
-//         contactMessagePop.textContent = 'Message sent'
-
-//         setTimeout(() => {
-//           contactMessagePop.textContent = ''
-//         }, 5000)
-//       })
-//   }
-// }
-// contactForm.addEventListener('submit', sendEmail)
